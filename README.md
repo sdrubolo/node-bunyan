@@ -96,7 +96,7 @@ node.js library usage of bunyan in your apps.
 
 **Tip**: Installing without optional dependencies can dramatically reduce
 bunyan's install size. **dtrace-provider** is used for dtrace features,
-**mv** is used for RotatingFileStream, and **moment** is used for local time.
+**fs-extra** is used for RotatingFileStream, and **moment** is used for local time.
 If you don't need these features, consider installing with the
 `--no-optional` flag.
 
@@ -1390,7 +1390,7 @@ configuration file to exclude them from the bundle:
 
 ```
 module: {
-    externals: ['dtrace-provider', 'fs', 'mv', 'os', 'source-map-support']
+    externals: ['dtrace-provider', 'fs', 'fs-extra', 'os', 'source-map-support']
 }
 ```
 
